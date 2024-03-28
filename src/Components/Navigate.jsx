@@ -9,7 +9,7 @@ function Navigate() {
                 <Col >
                     <div id='Nav-logo' style={{gap:"30px"}} className='d-flex justify-content-center align-items-center'>
                         <img width={'55px'} src="https://www.theknowhowlib.com/wp-content/uploads/2020/05/Swiggy-2.png" alt="lolll" />
-                        <p style={{fontSize:"13px"}} className='mt-3'><span className='fw-bold text-decoration-underline'>Kakkanad</span> 288R+8PX, Echamuku, Kakkanad...</p>
+                        <p style={{fontSize:"13px"}} className='mt-3'><span className='fw-bold text-decoration-underline'>Ghaziabad</span> Vasundhara Ghaziabad...</p>
                         <i style={{color:"#e78838"}} className="fa-solid fa-angle-down"></i>
                         </div>
                 </Col>
