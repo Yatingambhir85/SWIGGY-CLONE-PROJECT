@@ -20,7 +20,7 @@ pipeline{
     }
     stage("Static Code Analysis"){
       steps{
-        withSonarQubeEnv('sonar-scanner'){
+        withSonarQubeEnv('sonar-server'){
           sh '$SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=swiggy-clone-cicd -Dsonar.projectKey=swiggy-clone-cicd '
         }
       }
