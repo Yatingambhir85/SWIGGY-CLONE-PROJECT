@@ -59,6 +59,7 @@ pipeline{
     }
     stage("DOCKER DEPLOYMENT"){
         steps{
+            sh "docker stop swiggy-clone-cicd && docker rm swiggy-clone-cicd || true"
             sh 'docker run -itd --name swiggy-clone-cicd -p 3000:3000 swiggy-clone-cicd:latest'
         }
     }
