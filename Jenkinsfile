@@ -44,7 +44,7 @@ pipeline{
     stage("DOCKER BUILD & PUSH"){
         steps{
             script{
-                withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
+                withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker'){
                     sh 'docker build -t swiggy-clone-cicd .'
                     sh 'docker tag swiggy-clone-cicd yatingambhir/swiggy-clone-cicd:latest'
                     sh 'docker push yatingambhir/swiggy-clone-cicd:latest'
