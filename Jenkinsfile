@@ -59,7 +59,7 @@ pipeline{
     }
     stage("DOCKER DEPLOYMENT"){
         steps{
-            sh 'docker run -itd --name swiggy-clone-cicd -p 3000:3000 swiggy-clone-latest'
+            sh 'docker run -itd --name swiggy-clone-cicd -p 3000:3000 swiggy-clone-cicd:latest'
         }
     }
   }
